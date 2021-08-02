@@ -1,0 +1,79 @@
+body{
+    min-height: 100vh;
+    color: white;
+    background: url(../cubes.png), radial-gradient(136.77% 136.77% at 51.39% -8.69%, #3EE677 0%, #0E6D5C 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.clock{
+    width: 130px;
+    height: 130px;
+    border: 10px solid #0A5949;
+    border-radius: 50%;
+}
+.box{
+    background: #299d7cda;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.front{
+    background-color: #299d7cda;
+    backface-visibility: hidden;
+    border: 4px solid #299d7cda;
+    border-radius: 20px;
+    transition: 1s;
+}
+.flip{
+    transition: 1s;
+    transform: rotateY(180deg);
+}
+.error{
+    border: 4px solid #dc3545 !important;
+    color: #dc3545 !important;
+    transition: 1s;
+}
+.true{
+    border: 4px solid #0A5949 !important;
+    transition: 1s;
+}
+
+.modal-dialog{
+    top: 40% !important;
+}
+.start .modal-content{
+    background: transparent !important;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none !important;
+}
+.win .modal-content{
+    background: #198754 !important;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none !important;
+}
+.lose .modal-content{
+    background: #dc3545 !important;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none !important;
+}
+
+.audio{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.btn:focus{box-shadow: none !important;}
